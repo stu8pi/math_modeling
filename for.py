@@ -11,7 +11,6 @@ for i in a:
 range # генератор последовательности
 
 # for i in range (1, 1000, 0.01) начало(start), конец(stop), шаг(step) (конец не входит)
-
 b=range(0,10,2)
 print(b)
 print(type(b))
@@ -23,3 +22,14 @@ for i in range (0,10,1):
         print(c[i]+'-Bad')
     else:
         print(f'{i}'+'-Good')
+
+# break - прерывает цикл  ;  continue - переходит к следующей операции
+for i in 'Hello World':
+    if i=='o':
+        break
+    print(i)
+    
+for i in 'Hello World':
+    if i=='o':
+        continue
+    print(i)
